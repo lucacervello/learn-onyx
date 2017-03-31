@@ -23,7 +23,17 @@
        :onyx/doc "Reads segments from a core.async channel"}
 
       ;; <<< BEGIN FILL ME IN >>>
+      {:onyx/name :times-three
+       :onyx/fn :workshop.challenge-2-1/times-three
+       :onyx/type :function
+       :onyx/batch-size batch-size
+       :onyx/batch-timeout batch-timeout}
 
+      {:onyx/name :plus-fifty
+       :onyx/fn :workshop.challenge-2-1/plus-fifty
+       :onyx/type :function
+       :onyx/batch-timeout batch-timeout
+       :onyx/batch-size batch-size}
  
       ;; <<< END FILL ME IN >>>
 

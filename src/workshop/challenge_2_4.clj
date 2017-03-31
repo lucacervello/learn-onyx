@@ -22,7 +22,13 @@
        :onyx/doc "Reads segments from a core.async channel"}
 
       ;; <<< BEGIN FILL ME IN >>>
-
+      {:onyx/name :identity
+       :onyx/type :function
+       :onyx/fn :clojure.core/identity
+       :onyx/batch-timeout batch-timeout
+       :onyx/batch-size batch-size
+       :onyx/max-peers 3
+       }
       ;; <<< END FILL ME IN >>>
 
       {:onyx/name :write-segments
