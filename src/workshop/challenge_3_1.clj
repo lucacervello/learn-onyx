@@ -61,6 +61,12 @@
 
 ;; <<< BEGIN FILL ME IN >>>
 
+(defn interpose-char [ch {:keys [name]}]
+  {:name (-> (interpose ch name) clojure.string/join)})
+
+(defn upper-case [{:keys [name]}]
+  {:name (clojure.string/upper-case name)})
+
 ;; <<< END FILL ME IN >>>
 
 ;;; Lifecycles ;;;

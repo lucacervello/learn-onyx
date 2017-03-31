@@ -39,10 +39,11 @@
 
 ;;; Functions ;;;
 
+
 ;; <<< BEGIN FILL ME IN >>>
 
-
-
+(defn split-sentence [{:keys [sentence]}]
+  (map (fn [x] {:word x}) (clojure.string/split sentence #" ")))
 ;; <<< END FILL ME IN >>>
 
 ;;; Lifecycles ;;;
